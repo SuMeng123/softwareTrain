@@ -1,0 +1,654 @@
+@charset="utf-8";
+input[type="text"]{
+  border:1px solid #ccc;
+  height: 20px;
+  border-radius: 3px;
+  padding:3px 5px;
+  margin: 0 5px;
+}
+input[type="radio"],input[type="checkbox"]{
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.inputNumberLimit{
+	width:30px;
+}
+select:active{
+  border:1px solid #545454;
+}
+
+.clearfix:before,.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {*zoom:1;}
+.header{
+  width: 100%;
+  min-width: 1347px;
+  height: 70px;
+  margin:0 auto;
+  background: #3f4851;
+  color: #ffe38a;
+  overflow: hidden;
+}
+.logo{
+  line-height: 70px;
+  font-size: 23px;
+  float: left;
+  padding-left: 10px;
+}
+.logo img{
+  vertical-align: middle;
+}
+.user-info{
+ 	float: right;
+    height: 50px;
+    padding: 10px 20px;
+    color: #fff;
+}
+.user-info img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.user-info span{
+ padding: 0 70px;
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 29px;
+}
+.nav{
+  width: 150px;
+  min-height: 600px;
+  background: #efefef;
+  color: #fff;
+  height: 100%;
+  border-right: 1px solid #c2c7cd;
+  float: left;
+}
+.nav ul li{
+  text-align: center;
+  line-height: 40px;
+}
+.nav a{
+  display: block;
+  color: #757575;
+  transition: all .2s;
+}
+.nav .active{
+
+}
+.nav a:hover{
+  text-decoration: none;
+  color: #000;
+  border-left: 4px solid #ffe38a;
+}
+.nav ul li ul {
+  
+  display: none;
+  background: #fff;
+}
+.nav ul li ul.sub-menu li {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    font-size: 12px;
+    background: #f6f6f6;
+}
+.nav ul li{
+  position: relative;
+}
+
+.main-content{
+  min-width: 1347px;
+  overflow: hidden;
+ /*  position:relative;我加的 */
+}
+.container{
+  overflow: hidden;
+  min-height: 800px;
+  padding:12px;
+  min-width: 1172px;
+}
+.nav,.container{
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
+}
+.current-title{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.search-content,.table-content{
+  padding:10px;
+  border:1px solid #eee;
+  margin-bottom: 10px;
+}
+.search-item{
+  margin-bottom: 5px;
+}
+.btn-content{
+  margin:10px 0; 
+  
+}
+.btn-content2{
+	float:left;
+  margin-left:477px;
+}
+
+/* 分页和导出按钮 */
+.sum-btn{
+	overflow:hidden;
+}
+.btn{
+  border:none;
+  background: #fc7c00;
+  color: #fff;
+  display: inline-block;
+  padding:5px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.btn-unable{
+  border:none;
+  background: #cecccc;
+  color: #fff;
+  display: inline-block;
+  padding:5px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.btn:hover{
+  background: #FC7C43;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-default{
+  background: #e2e2e2;
+}
+
+.table{
+  border:1px solid #EBEBEB;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+ 
+}
+th{
+  text-align: left;
+}
+.table-bordered {
+  border: 1px solid #EBEBEB;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  background-color: #F5F5F6;
+  border-bottom-width: 1px;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #e7e7e7;
+}
+.table > thead > tr > th {
+  border-bottom: 1px solid #DDDDDD;
+  vertical-align: bottom;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 1px solid #e7eaec;
+  line-height: 1.42857;
+  padding: 8px;
+  vertical-align: middle;
+}
+.table a{
+  color: #4682B4;
+  display: inline-block;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 4px;
+}
+.table a.btn{
+  color: #000;
+}
+.table-content .btn-content{
+  text-align: center;
+}
+.table-content .btn-content .btn{
+  margin-right: 0;
+  margin-left: 10px;
+}
+.title-td{
+  background-color:#F5F5F6;
+  font-weight: bold;
+}
+.touxiang{
+  width: 100px;
+  height: 100px;
+}
+.select-file{
+  display: none;
+}
+
+textarea.textarea{
+  min-width: 600px;
+  min-height: 120px;
+  vertical-align: top;
+  padding:5px;
+  border-radius: 3px;
+  border:1px solid #ccc;
+}
+.footer{
+  height: 40px;
+  background: #efefef;
+  line-height: 40px;
+  padding-left: 20px;
+  margin-left: 150px;
+  color: #999999;
+  min-width:1172px;/* 我加的 */
+ /*  position:absolute;我加的
+  right:0;我加的
+  bottom:0;我加的 */
+  
+}
+.page{
+  /* text-align: center; */
+  float:right;
+}
+.page a{
+  display: inline-block;
+  padding:3px 12px;
+  background: #e2e2e2;
+  margin:0 5px;
+  border-radius: 3px;
+  color: #909090;
+}
+.page a.active{
+  background: #353535;
+  color: #fff;
+}
+.page a:hover{
+  text-decoration: none;
+  background: #353535;
+  color: #fff;
+}
+xmp{
+  font: 14px "Source Code Pro","Consolas";
+  background: rgb(39,42,50);
+  color: #00CED1;
+}
+.signIn-box{
+  height: 300px;
+  width: 300px;
+  margin:180px auto;
+}
+/* .fenkuang{
+  margin-bottom: 20px;
+} */
+.signIn-box .fenkuang h2{
+
+}
+
+.fenkuang input.sumsumsum{
+  height: 25px;
+  width: 250px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin: 10px 21px;
+}
+.sumsumsum:focus{
+/*   border:2px solid #FFD700; */
+  outline: none;
+}
+.sumsum1{
+  height: 30px;
+  width: 262px;
+}
+.yanzhengma{
+  margin-left: 20px;
+  font-size: 12px;
+
+}
+.yanzhengkuang{
+  width: 100px;
+  height: 30px;
+  border:1px solid red;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.denglu{
+  width: 262px;
+  height: 31px;
+  border-radius: 3px;
+  background-color:#FFD700;
+  border: 1px solid transparent;
+  margin-left:5px;
+}
+table a.changeStyle-04{
+	color:#ccc;
+}
+
+/* select2 */
+.changepass{
+margin-left: 500px;
+margin-top: -120px;
+border: 1px solid rgb(170, 158, 158);
+width: 300px;
+height: 100px;
+padding: 20px;
+}
+.hideCon{
+ 	position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #EFEFEF;
+    display: none;
+    border-radius: 0 0 3px 3px;
+    border-top: none;
+    color: #000;
+}
+.detail{
+ 	padding: 0 20px 20px;
+    font-size: 12px;
+}
+.set{
+  overflow: hidden;
+  margin: 10px;
+  font-size: 14px;
+  color: #757575;
+}
+ .quit{
+  float: right; 
+}
+ .alter{
+  float: left; 
+}
+.detail p {
+    margin-top: 10px;
+}
+#dino{
+    margin: 100px auto;
+    height: 400px;
+    width: 400px;
+  }
+
+#demo{
+      margin: 10px auto;
+      background-color: #fff;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      position: absolute;
+      padding: 10px;
+      top:100px;
+      left: 530px;
+      z-index:10000;
+      filter:alpha(opacity:1);
+      opacity: 1;
+      display: none;
+    }
+    #mask{
+      position: absolute;
+      top:0;
+      left: 0; 
+      right:0;
+      bottom: 0;
+      z-index:10000;
+      background-color: #000;
+      filter:alpha(opacity:0.5);
+      opacity: 0.5;
+      display: none;
+    }
+    input[type="text"].input_1{
+        display: inline-block;
+        margin: 6px 64px;
+        border: 1px solid #ccc;
+        height: 20px;
+        border-radius: 3px;
+        padding: 3px 5px;
+    }
+    #btn_1{   
+     margin: 20px 50px 20px 100px;
+      }
+    h2 {
+      text-align: center;
+    }
+    #fa{
+      position: absolute;
+      right: 20px;
+      top:20px;
+      cursor: pointer;
+    }
+#status{
+    margin-left: 37px;
+    width: 181px;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+.libox{
+    padding: 10px 60px;
+}
+
+input[type="text"].not{
+  	display:block;
+  	margin-top:5px;
+}
+		
+.rights-title{
+	padding:20px 10px 10px 240px;
+}
+.rights-title span{
+	display:inline-block;
+	padding:0 35px;
+}
+.qx-ul input[type='checkbox'] {
+			margin:10px 40px;
+}
+.main_juese {	
+			width: 1000px;
+			min-height: 1000px;
+			margin:50px auto;
+			background: #fff;
+			border-radius: 3px;
+			padding:50px;
+			border:1px solid #EEEEEE;
+		}
+.main_juese .title_juese input[type='checkbox'] {
+			margin:10px 20px;
+		}
+.qx-ul li{
+			list-style: none;
+			border-bottom: 1px solid #eee;
+		}
+.qx-ul li label{
+			display: inline-block;
+			margin:10px 30px 10px 10px;
+			cursor: pointer;
+			width: 200px;
+			text-align: right;
+		}
+.btn_return{
+	    float: right;
+}
+.quanxian_fuxuan{
+	background-color:#f5f5f5;
+}
+.title_juese label{
+	width:50px;
+	font-weight:bold;
+}
+.table #button_alert a.btn{
+  border:none;
+  background: #fc7c00;
+  color: #fff;
+  display: inline-block;
+  padding:5px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left:20px;
+  font-size: 14px;
+}
+.table #button_alert_2 a.btn{
+  border:none;
+  background: #fc7c00;
+  color: #fff;
+  display: inline-block;
+  padding:5px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+ #mask_alert{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      z-index:10000;
+      opacity: 0.5;
+      display: none;
+    }
+  #demo_alert{
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    position: fixed;
+    margin-top: -75px;
+    width: 480px;
+    height: 150px;
+    background-color: #fff;
+    z-index: 10001;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+  }
+    #btn_confirm{
+      margin:120px 30px 0 60px;
+    }
+    #button_alert{
+      padding: 20px;
+    }
+     #button_alert_2{
+      padding: 20px 43px 20px;
+    }
+    .tan_tit{
+          margin: 20px auto 0;
+          height: 43px;
+          width: 200px;
+          border-: red;
+          font-size: 21px;
+          text-align: center;
+          box-sizing: border-box;
+    }
+    #tan_content{
+      text-align: center;
+      margin-top: 60px;
+      font-size: 20px;
+    }
+.table a.btn_white{
+	color:#fff;
+	padding: 5px 20px;
+	border-radius: 3px;
+	border:1px solid transparent;
+}
+/* 3级联动的city_5 */
+/* .table tr td #city_5 input.cityinput{
+	display:inline-block;
+}
+.search-item #city_5{
+	display:inline-block;
+} */
+
+
+
+.tan-box{
+	padding: 20px 50px;
+	background:#fff;
+	border:1px solid #ccc;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-100px;
+	margin-top:-50px;
+	text-align:center;
+	min-width:200px;
+	min-height:100px;
+	border-radius:3px;
+	display:none;
+}
+.btn_center{
+	text-align:center;
+}
+
+/* 按钮隐藏 */
+a.btn-xianshi,
+input.btn-xianshi,
+a.btn-xinzeng,
+a.btn-xiugai,
+a.btn-shanchu,
+input.btn-shanchu,
+a.btn-dayin,
+a.btn-daochu,
+input.btn-daochu {
+	display: none;
+}
+/* table的td长短的样式 */
+span.cspan{
+    display: inline-block;        
+    width:150px; 
+    word-break:keep-all;/* 不换行 */  
+    white-space:nowrap;/* 不换行 */  
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */  
+    text-overflow:ellipsis;/* 文本溢出时显示省略标记(...)与overflow:hidden;一起使用*/
+}
+/* 网页中的必填项 */
+span.required{
+	color:red;
+}
+/* 左边导航高亮 */
+.nav ul li ul.sub-menu li.active{
+  text-decoration: none;
+  /*  color: red;  */
+  background:#ffe38a;
+  border-left: 4px solid #ffe38a;
+}
+.nav ul li ul.sub-menu li.active a{
+	color:#000;
+}
+ .tan-btn{
+ 	margin-left:50px;
+    width: 270px;
+    height: 35px;
+}
+.tan-btn-01{
+	margin-top:23px;
+	height: 40px;
+	width: 310px;
+}
+

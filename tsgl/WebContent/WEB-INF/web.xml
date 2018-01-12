@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>tsgl</display-name>
+  <welcome-file-list>
+    <welcome-file>/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+    <init-param>
+      <param-name>singleSession</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <url-pattern>*.action</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  <filter>
+    <filter-name>struts2_1</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2_1</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+   <!-- 分页每页显示条数 -->
+    <context-param>
+    <param-name>PageSize</param-name>
+    <param-value>10</param-value>
+    </context-param>
+    <context-param>
+    <param-name>StagePageSize</param-name>
+    <param-value>9</param-value>
+    </context-param>
+     <!-- 商品图片存储路径 -->
+    <context-param>
+    <param-name>PPic</param-name>
+    <param-value>/UploadImg/Product/</param-value>
+    </context-param>
+     <context-param>
+    <param-name>CPic</param-name>
+    <param-value>/UploadImg/Company/</param-value>
+    </context-param>
+    <!--NFDFlightDataTaskListener 监听器-->
+<listener>
+    <listener-class>com.tsgl.action.NFDFlightDataTaskListener</listener-class>
+</listener>
+</web-app>
